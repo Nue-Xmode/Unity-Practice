@@ -7,11 +7,17 @@ namespace UnityPractice.XMLLoad
     {
         private void Start()
         {
-            XmlTarget newTest = XMLToIns<XmlTarget>.ToIns("Assets/XMLLoad/Resources/XmlTest.xml");
-            
+            Test newTest = XMLToIns<Test>.ToIns("Assets/XMLLoad/Resources/Test.xml");
             Debug.Log(newTest.name);
             Debug.Log(newTest.github);
-            Debug.Log(newTest.age);
+            Debug.Log(newTest.age);   
         }
+    }
+
+    public class Test
+    {
+        public string name;
+        public string github;
+        public int age;
     }
 }
