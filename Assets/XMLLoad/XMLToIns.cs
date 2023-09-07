@@ -1,8 +1,9 @@
 using System;
 using System.Reflection;
 using System.Xml.Linq;
+using UnityEngine;
 
-namespace UnityPractice.XMLLoader
+namespace UnityPractice.XMLLoad
 {
     /// <summary>
     /// XML文件转换成类的实例
@@ -16,11 +17,12 @@ namespace UnityPractice.XMLLoader
         /// 返回一个实例
         /// </summary>
         /// <returns></returns>
-        public static T ToIns()
+        public static T ToIns(string path)
         {
             if (Target != null)
                 Target = null;
-
+            SetPath(path);
+            
             CreateInitiate();
             XElement xml = LoadXML();
             Type t = Target.GetType();
@@ -32,7 +34,7 @@ namespace UnityPractice.XMLLoader
                 fieldName = f.Name;
                 if (xml.Element(fieldName) != null)
                 {
-                    f.SetValue(Target, Convert.ChangeType(xml.Element(fieldName).Value, f.GetType()));
+                    f.SetValue(Target, Convert.ChangeType(xml.Element(fieldName).Value, f.FieldType));
                 }
             }
 
@@ -45,12 +47,12 @@ namespace UnityPractice.XMLLoader
         /// <param name="path"></param>
         public static void SetPath(string path)
         {
-            Path = path;
+            Path = Application.dataPath + path.Split("Assets")[1];
         }
 
         /// <summary>
         /// 加载XML文件
-        /// </summary> <summary>
+        /// </summary>
         private static XElement LoadXML()
         {
             if (Path == null)

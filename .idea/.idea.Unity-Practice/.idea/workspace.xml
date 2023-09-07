@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d71de6af-edda-412c-8e3a-44205703de28" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/XMLLoad/Resources/Test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XMLLoad/Resources/Test.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XMLLoad/XML Load.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XMLLoad/XML Load.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity-Practice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity-Practice/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/XMLLoad/Resources/Test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XMLLoad/Resources/Test.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/XMLLoad/XMLToIns.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XMLLoad/XMLToIns.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
@@ -79,10 +77,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="17188">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="18620">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="17188" />
+      <option name="pid" value="18620" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -103,6 +101,8 @@
       <workItem from="1693815287054" duration="11000" />
       <workItem from="1693815379427" duration="811000" />
       <workItem from="1693816506679" duration="1088000" />
+      <workItem from="1694088852072" duration="312000" />
+      <workItem from="1694089218937" duration="314000" />
     </task>
     <servers />
   </component>
