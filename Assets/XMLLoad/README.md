@@ -1,4 +1,4 @@
 [教程地址](https://www.cnblogs.com/murongxiaopifu/p/4199541.html)
 
 结果如下:  
-![](Assets/XMLLoad/Resources/Result.PNG)
+![](Unity-Practice/Assets/XMLLoad/Resources/Result.PNG)
