@@ -21,10 +21,12 @@ namespace UnityPractice.XMLLoad
         {
             if (Target != null)
                 Target = null;
-            SetPath(path);
             
+            SetPath(path);
+
             CreateInitiate();
             XElement xml = LoadXML();
+            
             Type t = Target.GetType();
             FieldInfo[] fields = t.GetFields();
             string fieldName = string.Empty;
@@ -45,7 +47,7 @@ namespace UnityPractice.XMLLoad
         /// 设置XML文件路径
         /// </summary>
         /// <param name="path"></param>
-        public static void SetPath(string path)
+        private static void SetPath(string path)
         {
             Path = Application.dataPath + path.Split("Assets")[1];
         }
